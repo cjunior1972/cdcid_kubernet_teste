@@ -1,1 +1,1 @@
-# kube-news testecjunior
+# kube-news teste com Dockerfile
