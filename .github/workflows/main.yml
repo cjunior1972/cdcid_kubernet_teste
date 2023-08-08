@@ -17,8 +17,8 @@ jobs:
            file: ./src/Dockerfile
            push: true
            tags: |
-               carlosarjunior/testescicd:v1
-               carlosarjunior/testescicd:latest
+               cjunior/testescicd:v1
+               cjunior/testescicd:latest
   
                
              
