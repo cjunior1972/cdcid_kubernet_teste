@@ -4,7 +4,21 @@ on:
   push:
     branches:  ["main"]
 
-               
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    
+    steps: 
+    - uses: actions/checkout@v3.1.0
+    - name: construcao da imagem docker 
+      uses: docker/build-push-action@v3.2.0
+      with: 
+           context: ./src
+           file: ./src/Dockerfile
+           push: true
+           tags: |
+               cjunior/testescicd:v1
+               cjunior/testescicd:latest               
              
            
            
