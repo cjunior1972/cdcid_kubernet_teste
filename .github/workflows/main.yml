@@ -13,8 +13,8 @@ jobs:
     - name: construcao da imagem docker 
       uses: docker/build-push-action@v3.2.0
       with: 
-           context: ./src
-           file: ./src/Dockerfile
+           context: ./scr
+           file: ./scr/Dockerfile
            push: true
            tags: |
                cjunior/testescicd:v1
