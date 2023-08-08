@@ -13,6 +13,8 @@ jobs:
     - name: construcao da imagem docker 
       uses: docker/build-push-action@v3.2.0
       with: 
+           username: ${{secrets.DOCKERHUB.USER}}
+           userpassword: ${{secrets.DOCKERHUB.PWD}}
            context: ./scr
            file: ./scr/Dockerfile
            push: true
